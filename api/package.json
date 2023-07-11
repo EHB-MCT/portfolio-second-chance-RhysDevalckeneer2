@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-second-chance-rhysdevalckeneer2",
+  "version": "0.1.0",
+  "description": "Backend for movietime",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EHB-MCT/portfolio-second-chance-RhysDevalckeneer2.git"
+  },
+  "keywords": [
+    "backend",
+    "api",
+    "movietime",
+    "open-source"
+  ],
+  "author": "Rhys Devalckeneer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EHB-MCT/portfolio-second-chance-RhysDevalckeneer2/issues"
+  },
+  "homepage": "https://github.com/EHB-MCT/portfolio-second-chance-RhysDevalckeneer2#readme"
+}
