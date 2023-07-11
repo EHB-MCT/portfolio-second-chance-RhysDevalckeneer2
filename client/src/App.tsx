@@ -1,8 +1,13 @@
+import { Routes, Route } from "react-router-dom";
+import {DetailsPage, HomePage, NotFoundPage} from "./pages"
+
 function App() {
   return (
-    <>
-      <p className="font-bold">client app works!</p>
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="movie/:id" element={<DetailsPage />} />
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
   )
 }
 
