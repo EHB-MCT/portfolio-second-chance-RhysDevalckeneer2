@@ -1,0 +1,1 @@
+// export { default as component_name } from "";
