@@ -17,6 +17,9 @@ const Header = () => {
                                 <Link to="/" className="flex flex-row content-center text-sm font-semibold text-slate-400 mr-10 hover:text-slate-500">Home</Link>
                             </li>
                             <li>
+                                <Link to="/search" className="flex flex-row content-center text-sm font-semibold text-slate-400 mr-10 hover:text-slate-500">Search</Link>
+                            </li>
+                            <li>
                                 <Link to="/watched" className="flex flex-row content-center text-sm font-semibold text-slate-400 mr-10 hover:text-slate-500"> Watched</Link>
                             </li>
                             <li>
