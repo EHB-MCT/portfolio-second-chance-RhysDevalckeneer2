@@ -1,5 +1,5 @@
 type Props = {
-    children?: React.ReactChild;
+    children?: React.ReactNode;
 };
 
 const Container = ( props: Props ) => {
