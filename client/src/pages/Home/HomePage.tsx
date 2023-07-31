@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Container, MovieCard } from '../../components/';
 
 import { FaEye, FaHeart, FaAlignLeft, FaStar, FaThLarge, FaCalendar } from 'react-icons/fa';
@@ -22,7 +22,6 @@ function HomePage () {
     }
 
     useEffect(() => {
-        console.log(popularMovies)
         fetchPopularMovies();
     }, [])
 
@@ -31,13 +30,13 @@ function HomePage () {
             <Container>
                 <header className="home_header w-full h-[45vh] rounded relative">
                     <h1 className="font-serif absolute -bottom-14 center-0 inset-x-0 bottom-0 text-center font-bold text-4xl text-slate-700">
-                        Track films you’ve watched.<br />
+                        Track films you've watched.<br />
                         Save those you want to see.<br />
-                        Tell your friends what’s good.
+                        Tell your friends what's good.
                     </h1>
                 </header>
                 <div className="pt-32 pb-12">
-                    <p className="uppercase mb-1 text-base text-slate-700 font-semibold">lets you...</p>
+                    <p className="uppercase mb-1 text-base text-slate-700 font-semibold">Movieclub lets you...</p>
                     <div className="grid grid-cols-3 gap-2">
                         <div className="bg-slate-100 flex flex-row">
                             <div className="p-4">
@@ -102,7 +101,6 @@ function HomePage () {
                                 <MovieCard key={movie.id} poster_path={movie.poster_path} score={movie.vote_average} movie_id={movie.id}/>
                             ))
                         }
-                        <MovieCard />
                     </div>
                 </div>
             </Container>
