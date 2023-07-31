@@ -2,3 +2,5 @@
 export { default as Container } from "./layout/Container.tsx";
 export { default as Header } from "./layout/Header.tsx";
 export { default as Footer } from "./layout/Footer.tsx";
+
+export { default as MovieCard } from "./MovieCard.tsx";
