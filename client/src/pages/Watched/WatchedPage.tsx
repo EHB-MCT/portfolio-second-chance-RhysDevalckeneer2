@@ -1,6 +1,6 @@
 function WatchedPage () {
-    return (
-        <p>watchedpage</p>
+        return (
+         <p>watched</p>
     )
 }
 
