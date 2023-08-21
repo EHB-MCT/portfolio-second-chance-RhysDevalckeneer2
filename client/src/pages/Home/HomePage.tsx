@@ -97,7 +97,7 @@ function HomePage () {
                     <p className="uppercase mb-1 text-base text-slate-700 font-semibold mb-2">Recently added...</p>
                     <div className="overflow-x-auto flex flex-row">
                         {
-                            popularMovies.map((movie) => (
+                            popularMovies.map((movie:any) => (
                                 <MovieCard key={movie.id} poster_path={movie.poster_path} score={movie.vote_average} movie_id={movie.id}/>
                             ))
                         }
