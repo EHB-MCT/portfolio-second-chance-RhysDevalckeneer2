@@ -1,0 +1,41 @@
+version: "3.8"
+services:
+  mongodb:
+    image: "mongo"
+    ports:
+      - "27017:27017"
+    networks:
+      - movieclub
+    volumes:
+      - mongo-data:/data/db
+
+  backend:
+    build: ./api/
+    ports:
+      - "6200:6200"
+    volumes:
+      - ./api:/usr/src/app
+    depends_on:
+      - mongodb
+    networks:
+      - movieclub
+
+  frontend:
+    build: ./client/
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/usr/src/app
+    depends_on:
+      - backend
+    networks:
+      - movieclub
+    # keep container running at all times 
+    tty: true
+
+networks:
+  movieclub:
+    driver: bridge
+volumes:
+  mongo-data:
+    driver: local
